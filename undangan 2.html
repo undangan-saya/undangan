@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Kita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* --- STYLE DASAR --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fcf8f2;
+            color: #e2d7da;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #8a7051;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            padding: 60px 20px;
+            background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)), url('merid.webp') no-repeat center;
+            background-size: cover;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: #8a7051;
+            margin-bottom: 10px;
+        }
+
+        /* --- MEMPELAI --- */
+        .mempelai-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+
+
+        .mempelai-item {
+            text-align:center ;
+            max-width: 220px;
+        
+        }
+        .mempelai-item img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .nama-mempelai {
+             font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            font-weight:bold;
+            color: #4d3f31;
+        }
+
+        .ampersand {
+            font-size: 2rem;
+            color: #8a7051;
+            margin: 10px 0;
+        }
+
+        /* --- ACARA & COUNTDOWN --- */
+        .acara {
+            background: #fdfaf6;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px solid #f1e7da;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .countdown-item {
+            background: #8a7051;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            min-width: 70px;
+        }
+
+        .countdown-item span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* --- TOMBOL --- */
+        .btn {
+            display: inline-block;
+            background-color: #8a7051;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 15px;
+        }
+
+        .heart {
+    position: fixed;
+    bottom: -20px;
+    color: green;
+    font-size: 20px;
+    animation: floatUp 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+
+        .btn:hover {
+            background-color: #6f583e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Bagian Pembuka -->
+        <section class="hero">
+            <p>THE WEDDING OF</p>
+            <h1>Romi  & Julita</h1>
+            <p>08.06.2026</p>
+        </section>
+
+        <!-- Salam Pembuka -->
+        <section>
+            <p><em>Assalamu'alaikum Wr. Wb.</em></p>
+            <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i ke acara pernikahan kami:</p>
+        </section>
+
+
+        <!--musik-->
+        <button onclick="toggleMusic()" class="btn">
+        🎵 Putar Musik
+    </button>
+
+</div>
+
+<audio id="musik" loop>
+    <source src="NaFF - Akhirnya Ku Menemukanmu  Official Music Video - Trinity Optima Production.mp3" type="audio/mpeg">
+</audio>
+ 
+        
+        <!-- Profil Mempelai -->
+
+        <section class="mempelai">
+
+            <div class="mempelai-container">
+
+            <div class="mempelai-item">
+            <img src="cwok 2.png" alt="Mempelai">
+            <div class="nama-mempelai">Romi</div>
+            <p>Putra Ke Tiga dari Bapak Akbar & Ibu Laila</p>
+            
+            <div class="ampersand">&</div>
+
+            <div class="mempelai-item">
+            <img src="cwek.1.png" alt="Mempelai">
+            <div class="nama-mempelai">Julita </div>
+            <p>Putri Pertama dari Bapak Agung & Ibu Fulani</p>
+            </div>
+        
+        </div>
+
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #f1e7da; margin: 40px 0;">
+
+        <!-- Detail Acara -->
+        <section class="acara">
+            <h2>Waktu & Tempat Acara</h2>
+            
+            <h3>Akad Nikah</h3>
+            <p>Jumat </p>
+            <p>Pukul 09.00 WIB s.d Selesai<br>
+            Masjid Agung Al iklas </p>
+
+            <h3 style="margin-top: 20px;">Resepsi</h3> 
+            <p>Minggu</p>
+            <p>Pukul 11.00 WIB s.d 16.00 WIB<br>
+            Gedung Pancsila, Jl.Letjed S parman </p>
+
+            <!-- Tombol Google Maps -->
+            <a href="https://maps.app.goo.gl/ZU7543wEomeGJZ936" target="_blank" class="btn">Buka Peta Lokasi</a>
+        </section>
+
+        <!-- Hitung Mundur -->
+        <section>
+            <h3>Menuju Hari Bahagia</h3>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">minggu</span> Hari
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">13</span> Jam
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span> Menit
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span> Detik
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 60px; font-size: 0.9rem; color: #999;">
+            <p>Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu berkenan hadir.</p>
+            <p>Terima Kasih</p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT UNTUK COUNTDOWN -->
+
+    <script>
+    const weddingDate = new Date("Juni 10, 2026 09:00:00").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            // Hitung waktu untuk hari, jam, menit, dan detik
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Tampilkan hasil di elemen masing-masing
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // Jika hitung mundur selesai
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.querySelector(".countdown").innerHTML = "<h4>Acara Telah Berlangsung!</h4>";
+            }
+        }, 1000);
+
+    // Animasi hati melayang
+    function createHeart() {
+        const heart = document.createElement("div");
+
+        heart.classList.add("heart");
+        heart.innerHTML = "✨";
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.fontSize = (Math.random() * 20 + 20) + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+
+    setInterval(createHeart, 500);
+
+    // musik
+function toggleMusic() {
+    const musik = document.getElementById("musik");
+
+    if (musik.paused) {
+        musik.play();
+    } else {
+        musik.pause();
+    }
+}
+
+document.addEventListener("click", function() {
+    document.getElementById("musik").play();
+}, { once: true });
+    
+</script>
+
+</body>
+</html>
